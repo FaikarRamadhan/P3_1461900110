@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\DokterController;
+
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/dokter0110', 'App\Http\Controllers\DokterController@index');
+// Route::resource('/dokter', [DokterController::class]);
